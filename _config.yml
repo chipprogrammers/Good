@@ -1,0 +1,33 @@
+title: Good
+description: HCZ material theme v2
+author: Chipprogrammer
+github: https://github.com/chipprogrammers
+about: Arun&rsquo;s Thoughts and Ideas
+
+color: orange
+tagline: Electronics for you
+logo: /static/img/now-logo.png
+headerImage: /static/img/header.jpg
+baseurl: "/imbue"
+url: "https://chipprogrammers.github.io"
+
+disqus_shortname: https-chipprogrammers-github-io-pimate
+google_analytics: UA-89660760-2
+
+share:
+  twitter_username: ARUNKSOMAN2
+  fb_appid: 000000000000
+
+
+enableTags: true
+tagarray: []
+
+paginate: 6
+paginate_path: "/page:num/"
+markdown: kramdown
+highlighter: rouge
+# gems: [jekyll-paginate, jekyll-gist]
+
+#AdSense
+data-ad-client: 2988067515010693
+data-ad-slot: 5002142332
