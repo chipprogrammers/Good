@@ -3,9 +3,9 @@
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>Good</b></h3>
   </div>
- {% for y in site.data.menu %}
   <div class="w3-padding-64 w3-large" style="font-weight:bold">
-    <a href="{{ y.url }}" class="w3-bar-item w3-button"><i class="fa {{ y.icon }}">{{ y.text }}</a>
+     {% for y in site.data.menu %}
+        <a href="{{ y.url }}" class="w3-bar-item w3-button"><i class="fa {{ y.icon }}">{{ y.text }}</i></a>
+     {% endfor %}
   </div>
- {% endfor %}
 </nav>
