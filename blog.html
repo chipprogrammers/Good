@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="w3-container" style="margin-top:75px">
-<div class="w3-row">
 {% for post in site.posts %}
    <div class="w3-half">
+   <div class="w3-row">
    <div class="w3-card-4 w3-margin">
     <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
     <div class="w3-container">
@@ -14,6 +14,6 @@ layout: default
     </div>
  </div>
 </div>
-{% endfor %}
 </div>
+{% endfor %}
 </div>
