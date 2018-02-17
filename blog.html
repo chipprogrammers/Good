@@ -5,6 +5,7 @@ layout: default
 <div class="w3-container" style="margin-top:75px">
 <div class="w3-row-padding">
 {% for post in site.posts %}
+   <div class="w3-container w3-half">
    <div class="w3-card-4 w3-margin">
     <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
     <h3><b>{{ post.title }}</b></h3>
@@ -12,6 +13,7 @@ layout: default
     <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
     </div>
  </div>
+</div>
 {% endfor %}
 </div>
 </div>
