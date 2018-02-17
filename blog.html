@@ -2,31 +2,18 @@
 layout: default
 ---
 
-<div class="w3-container" id="services" style="margin-top:75px">
+<div class="w3-container" style="margin-top:75px">
 <div class="w3-row-padding">
+{% for post in paginator.posts %}
 <div class="w3-col m4 w3-margin-bottom">
    <div class="w3-card-4 w3-margin">
-    <img src="https://www.w3schools.com/w3css/img_fjords.jpg" alt="Norway" style="width:100%">
+    <img src="{{ site.baseurl }}/blog/{{ post.img }}" style="width:100%">
+    <h3><b>{{ post.title }}</b></h3>
     <div class="w3-container w3">
-    <p>The Troll's tongue in Hardanger, Norway</p>
+    <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
     </div>
  </div>
 </div>
-<div class="w3-col m4 w3-margin-bottom">
-<div class="w3-card-4 w3-margin">
-    <img src="https://www.w3schools.com/w3css/img_fjords.jpg" alt="Norway" style="width:100%">
-   <div class="w3-container">
-    <p>The Troll's tongue in Hardanger, Norway</p>
-   </div>
- </div>
-</div>
-<div class="w3-col m4 w3-margin-bottom">
-    <div class="w3-card-4 w3-margin">
-  <img src="https://www.w3schools.com/w3css/img_fjords.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-    <p>The Troll's tongue in Hardanger, Norway</p>
-    </div>
-  </div>
-</div>
+{% endfor %}
 </div>
 </div>
