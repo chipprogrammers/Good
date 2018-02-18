@@ -7,14 +7,15 @@ layout: default
 {% for post in site.posts %}
 <div class="w3-third">
    <div class="w3-card-4 w3-margin" style="min-height:600px">
+      <div class="w3-display-middle w3-display-hover">
+      Category:<span class="w3-tag">
+           <a href="{{ site.baseurl }}/category/{{ post.category }}">{{ post.category }}</a>
+      </span>
        <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
        <div class="w3-container">
            <h3><b>{{ post.title }}</b></h3>
-           <span class="w3-opacity"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
+           <span class="w3-opacity"><i class="fa fa-calendar" aria-hidden="true"></i> Posted on {{ post.date | date_to_string }}</span>
            <p>{{ post.content | strip_html | truncatewords: 40 }}</p><br />
-           Category:<span class="w3-tag">
-                <a href="{{ site.baseurl }}/category/{{ post.category }}">{{ post.category }}</a>
-           </span>
        </div>
    </div>
 </div>
