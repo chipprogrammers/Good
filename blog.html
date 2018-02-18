@@ -9,6 +9,9 @@ layout: default
    <div class="w3-card-4 w3-margin" style="min-height:600px">
        <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
        <div class="w3-container">
+           <span class="w3-tag">
+           <a href="{{ site.baseurl }}/category/{{ post.category }}">{{ post.category }}</a>
+           </span>
            <h3><b>{{ post.title }}</b></h3>
            <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
        </div>
@@ -17,3 +20,31 @@ layout: default
 {% endfor %}
 </div>
 </div>
+{% comment %}
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination"> 
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+{% endcomment %}
