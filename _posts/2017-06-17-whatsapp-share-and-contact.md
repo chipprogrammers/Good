@@ -2,7 +2,7 @@
 layout: post
 title:  "WhatsApp Share and Contact Button"
 date:   2017-06-17 10:07:39 -0700
-categories: jekyll
+category: jekyll
 card_color: danger
 img: /static/img/4.jpg
 tags: 
