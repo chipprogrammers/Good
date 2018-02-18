@@ -10,7 +10,7 @@ layout: default
       <div class="w3-display-container w3-hover-opacity">
        <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
       <div class="w3-display-middle w3-display-hover w3-text-white">
-      Category:<span class="w3-tag">
+      Category: <span class="w3-tag">
            <a href="{{ site.baseurl }}/category/{{ post.category }}">{{ post.category }}</a>
       </span>
       </div>
@@ -28,27 +28,27 @@ layout: default
 {% comment %}
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination"> 
+<div class="w3-bar">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    <a class="w3-button"> href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <span class="w3-button">>&laquo; Prev</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
+      <span class="w3-button">{{ page }}</span>
     {% elsif page == 1 %}
       <a href="/">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a class="w3-button" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a class="w3-button" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
   {% else %}
-    <span>Next &raquo;</span>
+    <span class="w3-button">Next &raquo;</span>
   {% endif %}
 </div>
 {% endif %}
