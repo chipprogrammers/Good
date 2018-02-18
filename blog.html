@@ -9,13 +9,11 @@ layout: default
    <div class="w3-card-4 w3-margin" style="min-height:600px">
        <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
        <div class="w3-container">
-           <h3><b>{{ post.title }}</b></h3><br />
-           <button class="w3-button w3-round-large w3-purple">
-              <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}
-           </button>
+           <h3><b>{{ post.title }}</b></h3>
+           <span class="w3-opacity"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
            <p>{{ post.content | strip_html | truncatewords: 40 }}</p><br />
-           <span class="w3-tag">
-           <a href="{{ site.baseurl }}/category/{{ post.category }}">Category: {{ post.category }}</a>
+           Category:<span class="w3-tag">
+                <a href="{{ site.baseurl }}/category/{{ post.category }}">{{ post.category }}</a>
            </span>
        </div>
    </div>
