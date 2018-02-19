@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="w3-container" style="margin-top:75px">
+<article class="w3-container" style="margin-top:75px">
     {{ content }}
 <hr />
 {% assign hasSimilar = '' %}
@@ -39,7 +39,8 @@ layout: default
     <a class="w3-button w3-right w3-red" href="{{ site.url }}{{ page.next.url }}">Next &raquo;</a>
   {% endif %}
 </div>
-
+<article>
+<div class="w3-container">
 <div class="disqus-comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -55,6 +56,5 @@ layout: default
         })();
     /* ]]> */
     </script>
-</div>
 </div>
 </div>
