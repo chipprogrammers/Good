@@ -144,7 +144,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 .highlight .il{color:#ae81ff}
 
 /* HyperLinks */
-article.myLink a{
+article a{
 a:link {
     color: red; 
     background-color: transparent; 
