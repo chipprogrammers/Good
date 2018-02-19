@@ -28,7 +28,7 @@
   {
     "text": "XML Feed",
     "url": "/feed.xml",
-    "icon": "fas fa-feed",
+    "icon": "fas fa-rss",
     "target": _blank
   }
 ]
