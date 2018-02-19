@@ -3,7 +3,7 @@
   <div class="social">
    {% for x in site.data.social %}
      <a target="_blank" href="{{ x.link }}">
-     <i class="fa fa-{{ x.icon }} fa-2x" style="color:{{ x.color }}"></i></a>
+     <i class="{{ x.icon }} fa-2x" style="color:{{ x.color }}"></i></a>
    {% endfor %}
   </div>
   <p>Made with by <a href="https://chipprogrammer.blogspot.com" target="_blank">Arun</a></p>
