@@ -147,7 +147,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 #myLink a[href^="//"]:after, 
 #myLink a[href^="http://"]:after, 
 #myLink a[href^="https://"]:after {
-  content: url({{ site.baseurl }}/fonts/webfonts/extern_link.svg);
+  content: url(../extern_link.svg);
   margin: 0 0 0 5px;
 }
 #myLink a:link {
