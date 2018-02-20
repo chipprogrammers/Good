@@ -12,6 +12,7 @@ layout: default
         {% for thisTag in page.category %}
             {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                 {% if hasSimilar.size == 0 %}
+                <div class="w3-card-4">                                       
                 <h4>Related Posts</h4>
                 <ul class="w3-ul">
                 {% endif %}
@@ -29,6 +30,7 @@ layout: default
 {% endfor %}
 {% if hasSimilar.size > 0 %}
     </ul>
+ </div>
 {% endif %}
 
 <div class="w3-bar w3-round">
