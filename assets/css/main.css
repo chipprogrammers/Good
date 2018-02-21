@@ -152,12 +152,11 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
   font-weight: 900;
   margin: 0 0 0 5px;
 }
-#myLink a[href^="//"]:after, 
-#myLink a[href^="http://"]:after, 
-#myLink a[href^="https://"]:after {
-  :not(img);
-}
+#myLink img
 #myLink a:link {
+    content: "";
+    display: none;
+}
     color: blue; 
     background-color: transparent; 
     text-decoration: none;
