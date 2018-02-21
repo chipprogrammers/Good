@@ -155,7 +155,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 #myLink a[href^="//"]:after, 
 #myLink a[href^="http://"]:after, 
 #myLink a[href^="https://"]:after {
-  :not(.img)
+  :not(img);
 }
 #myLink a:link {
     color: blue; 
