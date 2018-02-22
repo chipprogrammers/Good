@@ -21,8 +21,4 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
-Check out the [Jekyll docs][jekyll]{:target="_blank"} for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]{:target="_blank"}. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help]{:target="_blank"}.
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+Check out the [Jekyll docs](https://jekyllrb.com){:target="_blank"} for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo](https://github.com/jekyll/jekyll){:target="_blank"}. If you have questions, you can ask them on [Jekyll’s dedicated Help repository](https://github.com/jekyll/jekyll-help){:target="_blank"}.
