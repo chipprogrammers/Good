@@ -9,4 +9,10 @@
      {% endfor %}
     {% include site_search.html %}
   </div>
+   <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    {% for y in site.data.menu %}
+        <a href="{{ y.url }}" class="w3-bar-item w3-button w3-hide-small"><i class="{{ y.icon }}">  {{ y.text }}</i></a>
+     {% endfor %}
+    {% include site_search.html %} 
 </div>
