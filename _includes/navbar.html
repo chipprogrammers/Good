@@ -1,6 +1,5 @@
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -10,5 +9,14 @@
      {% endfor %}
     {% include site_search.html %}
   </div>
+
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/Good" class="w3-bar-item w3-button">Good</a>
+     {% for y in site.data.menu %}
+        <a href="{{ y.url }}" class="w3-bar-item w3-button w3-hide-small"><i class="{{ y.icon }}">  {{ y.text }}</i></a>
+     {% endfor %}
 </div>
 </div>
