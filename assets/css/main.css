@@ -151,6 +151,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin: 0 0 0 5px;
+  :not(img);
 }
 #myLink a:link{
     color: blue; 
