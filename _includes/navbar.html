@@ -7,8 +7,6 @@
      {% for y in site.data.menu %}
         <a href="{{ y.url }}" class="w3-bar-item w3-button w3-hide-small"><i class="{{ y.icon }}">  {{ y.text }}</i></a>
      {% endfor %}
-    {% comment %}
     {% include site_search.html %}
-    {% endcomment %}
   </div>
 </div>
