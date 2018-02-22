@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Home",
+    "url": "/",
+    "icon": "fas fa-home",
+    "layout": "post"
+  },
+  {
+    "text": "About",
+    "url": "/about/",
+    "icon": "fas fa-comments"
+  },
+  {
+    "text": "Projects",
+    "url": "/projects",
+    "icon": "fas fa-desktop"
+  },
+  {
+    "text": "Resume",
+    "url": "/#",
+    "icon": "fas fa-graduation-cap",
+  },
+  {
+    "text": "Github",
+    "url": "/#",
+    "icon": "fab fa-github"
+  },
+  {
+    "text": "XML Feed",
+    "url": "/feed.xml",
+    "icon": "fas fa-rss",
+    "target": _blank
+  }
+]
