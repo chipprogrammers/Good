@@ -1,0 +1,7 @@
+<!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    {% for z in site.data.small_menu %}
+        <a href="{{ z.url }}" class="w3-bar-item w3-button w3-hide-small"><i class="{{ z.icon }}">  {{ z.text }}</i></a>
+     {% endfor %}
+    {% include site_phone_search.html %}
+</div>
