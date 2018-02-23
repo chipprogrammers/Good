@@ -5,7 +5,7 @@
     </a>
     <a href="/Good" class="w3-bar-item w3-button"><b>Good</b></a>
      {% for y in site.data.menu %}
-        <a href="{{ y.url }}" class="w3-bar-item w3-button w3-hide-small"><i class="{{ y.icon }}">  {{ y.text }}</i></a>
+        <a href="{{ y.url }}" class="w3-bar-item w3-button w3-hide-small"><i class="{{ y.icon }}"></i>  {{ y.text }}</a>
      {% endfor %}
     {% include site_search.html %}
   </div>
