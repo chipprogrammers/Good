@@ -20,6 +20,7 @@ layout: default
     {% if site.categories[page.categories] %}
         {% for post in site.categories[page.categories] %}
         <div class="w3-third">
+             <div class="w3-third">
   <div class="w3-card-4 w3-margin" style="min-height:700px">
      <div class="w3-display-container w3-hover-opacity">
          <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
@@ -49,9 +50,8 @@ layout: default
       </div>
 {% endfor %}
     </div>
- </div>
     {% else %}
-     <p>There are no posts in this categories.</p>
+<p>There are no posts in this categories.</p>
     {% endif %}
     <br />
     <br />
