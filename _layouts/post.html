@@ -4,7 +4,9 @@ layout: default
 
 <article class="w3-container" id="myLink" style="margin-top:75px">
     {{ content }}
+</article>
 <hr />
+<div class="w3-container">
     <!-- tag cloud -->
 	<i class="fas fa-tags fa-lg" aria-hidden="true"></i><h4 style="display:inline">Posts is tagged on:</h4>
         <ul class="taggs">
@@ -37,7 +39,6 @@ layout: default
 {% if hasSimilar.size > 0 %}
     </ul>
 {% endif %}
-
 <div class="w3-bar w3-round">
   {% if page.previous.url %}
     <a class="w3-button w3-red" href="{{ site.baseurl }}{{ page.previous.url }}">&laquo; Previous</a>
@@ -46,7 +47,7 @@ layout: default
     <a class="w3-button w3-right w3-red" href="{{ site.baseurl }}{{ page.next.url }}">Next &raquo;</a>
   {% endif %}
 </div>
-</article>
+</div>
 <div class="w3-container">
 <div class="disqus-comments">
     <div id="disqus_thread"></div>
