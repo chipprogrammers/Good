@@ -8,7 +8,7 @@ layout: default
     {% for category in site.category %}
         {% capture category_slug %}{{ category | first }}{% endcapture %}
         {% for c_slug in category_slug %}
-            {% if c_slug == page.categories %}
+            {% if c_slug == page.category %}
                 <button class="w3-button w3-ripple w3-hover-red">{{ c_slug }}</button>
             {% else %}
                 <a href="{{site.baseurl}}/category/{{ c_slug }}" class="w3-button w3-ripple">{{ c_slug }}</a>
