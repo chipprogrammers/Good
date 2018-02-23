@@ -2,46 +2,70 @@
 layout: default
 ---
 
-<div class="w3-container" style="margin-top:75px">
-    <h1>Articles by category: {{ page.category }}</h1>
-   <hr />
-    {% for category in site.category %}
+<header id="post-header">
+    <h1 id="post-subtitle">Articles by category: {{ page.categories }}</h1>
+</header>
+    <hr />
+    {% for category in site.categories %}
         {% capture category_slug %}{{ category | first }}{% endcapture %}
         {% for c_slug in category_slug %}
-            {% if c_slug == page.category %}
-                <button class="w3-button w3-ripple w3-hover-red">{{ c_slug }}</button>
+            {% if c_slug == page.categories %}
+                <button class="btn btn-sm btn-primary btn-raised">{{ c_slug }}</button>
             {% else %}
-                <a href="{{site.baseurl}}/category/{{ c_slug }}" class="w3-button w3-ripple">{{ c_slug }}</a>
+                <a href="{{site.baseurl}}/category/{{ c_slug }}" class="btn btn-sm btn-default btn-raised">{{ c_slug }}</a>
             {% endif %}
         {% endfor %}
     {% endfor %}
     <hr />
-  <div class="w3-row-padding-2px">
-   {% if site.categories[page.category] %}
-        {% for post in site.categories[page.category] %}
-  <div class="w3-third">
-   <div class="w3-card-4 w3-margin" style="min-height:700px">
-      <div class="w3-display-container w3-hover-opacity">
-       <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
-      <div class="w3-display-middle w3-display-hover w3-text-white">
-      Category: <span class="w3-tag">
-           <a href="{{ site.baseurl }}/category/{{ post.category }}">{{ post.category }}</a>
-      </span>
-      </div>
-      </div>
-       <div class="w3-container">
-           <h3><b>{{ post.title }}</b></h3>
-           <span class="w3-opacity"><i class="fa fa-calendar" aria-hidden="true"></i> Posted on {{ post.date | date_to_string }}</span>
-           <p>{{ post.content | strip_html | truncatewords: 40 }}</p><br />
-          <a href="{{ post.url | prepend: site.baseurl }}" class="w3-button w3-black">Read More</a>
+    <div class="card-deck">
+    <div class="row">
+    {% if site.categories[page.categories] %}
+        {% for post in site.categories[page.categories] %}
+        <div class="col-sm-6">
+        <div class="card card-nav-tabs">
+        <div class="header header-{{ post.card_color }}">
+        <div class="nav-tabs-wrapper">
+        <ul class="nav nav-tabs" data-tabs="tabs">
+           <li class="nav-item">
+               {{ post.title }}
+           </li>
+        </ul>
        </div>
-   </div>
+      </div>
+      <div class="content">
+          <img class="card-img-top img-responsive" src="{{ site.baseurl }}/{{ post.img }}" alt="Card image">
+      <div class="tab-content text-center">
+      <div class="tab-pane active" role="tabpanel" style="overflow:hidden">
+      {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% if forloop.first %}
+      <!-- <button class="btn btn-success btn-round">
+      <i class="fa fa-calendar" aria-hidden="true"></i> {{ post_year}}
+      </button> -->
+      {% endif %} 
+            {% if forloop.first == false %}
+                {% assign previous_index = forloop.index0 | minus: 1 %}
+                {% capture previous_post_year %}{{ site.categories[page.categories][previous_index].date | date: '%Y' }}{% endcapture %}
+                {% if post_year != previous_post_year %}
+                <!-- <button class="btn btn-success btn-round">
+                <i class="fa fa-calendar" aria-hidden="true"></i> {{ post_year }}
+                </button> -->
+                {% endif %}
+            {% endif %}
+             <button class="btn btn-{{ post.card_color }} btn-round">
+             <i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date | date_to_string }}
+             </button>
+            <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
+            <a href="{{ post.url |prepend:site.baseurl }}" class="btn btn-{{ post.card_color }}">Read More</a>
+            </div>
+        </div>
+      </div>
+    </div>
 </div>
 {% endfor %}
- {% else %}
+    {% else %}
      <p>There are no posts in this categories.</p>
     {% endif %}
     <br />
     <br />
   </div>
-  </div>
+</div>
