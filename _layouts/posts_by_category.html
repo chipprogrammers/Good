@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="w3-container" style="margin-top:75px>
-    <h1 id="post-subtitle">Articles by category: {{ page.categories }}</h1>
+    <h1>Articles by category: {{ page.categories }}</h1>
     <hr />
     {% for category in site.categories %}
         {% capture category_slug %}{{ category | first }}{% endcapture %}
