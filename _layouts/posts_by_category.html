@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="w3-container" style="margin-top:75px">
+    <h1>Articles by category: {{ page.category }}</h1>
+   <hr />
+    {% for category in site.category %}
+        {% capture category_slug %}{{ category | first }}{% endcapture %}
+        {% for c_slug in category_slug %}
+            {% if c_slug == page.categories %}
+                <button class="w3-button w3-ripple w3-hover-red">{{ c_slug }}</button>
+            {% else %}
+                <a href="{{site.baseurl}}/category/{{ c_slug }}" class="w3-button w3-ripple">{{ c_slug }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    <hr />
+  <div class="w3-row-padding-2px">
+   {% if site.categories[page.category] %}
+        {% for post in site.categories[page.category] %}
+  <div class="w3-third">
+   <div class="w3-card-4 w3-margin" style="min-height:700px">
+      <div class="w3-display-container w3-hover-opacity">
+       <img src="{{ site.baseurl }}{{ post.img }}" style="width:100%">
+      <div class="w3-display-middle w3-display-hover w3-text-white">
+      Category: <span class="w3-tag">
+           <a href="{{ site.baseurl }}/category/{{ post.category }}">{{ post.category }}</a>
+      </span>
+      </div>
+      </div>
+       <div class="w3-container">
+           <h3><b>{{ post.title }}</b></h3>
+           <span class="w3-opacity"><i class="fa fa-calendar" aria-hidden="true"></i> Posted on {{ post.date | date_to_string }}</span>
+           <p>{{ post.content | strip_html | truncatewords: 40 }}</p><br />
+          <a href="{{ post.url | prepend: site.baseurl }}" class="w3-button w3-black">Read More</a>
+       </div>
+   </div>
+</div>
+{% endfor %}
+ {% else %}
+     <p>There are no posts in this categories.</p>
+    {% endif %}
+    <br />
+    <br />
+  </div>
+  </div>
