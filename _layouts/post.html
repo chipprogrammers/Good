@@ -5,6 +5,13 @@ layout: default
 <article class="w3-container" id="myLink" style="margin-top:75px">
     {{ content }}
 <hr />
+    <!-- tag cloud -->
+	<i class="fa fa-tags fa-lg" aria-hidden="true"></i><h4 style="display:inline">Posts is tagged on:</h4>
+        <ul class="taggs">
+         {% for tag in page.tags %}
+         <li><a href="{{ site.baseurl }}/tags#{{ tag | slugify }}" class="tagg">{{ tag }}</a></li>
+      {% endfor %}
+     </ul>
 {% assign hasSimilar = '' %}
 {% for post in site.posts  %}
     {% assign postHasSimilar = false %}
