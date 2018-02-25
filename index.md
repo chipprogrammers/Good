@@ -11,5 +11,3 @@ ChipprogrammersChipprogrammers is multi purpose Jekyll template made by Chipprog
 <div class="myNote success"><span>success: </span>Write your success message here. The processor is the ability to another with the processor for the processor for performing arts ayirunnu ennu paranju poyit thirichu odi the same counter offer illayirunnu of the amplifier and answer show an interest.</div>
 <div class="myNote warning"><span>warning: </span>Write your warning message here.</div>
 <div class="myNote info"><span>info: </span>Write your notice message here.</div>
-
-</div>
