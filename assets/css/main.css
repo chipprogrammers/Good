@@ -9,22 +9,22 @@ body,h1,h2,h3,h4,h5{font-family:Poppins,sans-serif}body{font-size:18px}.w3-half 
 	text-transform:uppercase;
 }
 .danger {
-	background:#ffdddd url('../svg/cancel.svg') no-repeat 10px 10px;
-	background-size: 14px 14px;
+	background:#ffdddd url('../svg/cancel.svg') no-repeat 13px 13px;
+	background-size: 18px 18px;
 	border-left: 6px solid #f44336;
 }
 .success {
-  	background:#ddffdd url('../svg/success.svg') no-repeat  10px 10px;	
-  	background-size:14px 14px;
+  	background:#ddffdd url('../svg/success.svg') no-repeat  13px 13px;	
+  	background-size:18px 18px;
   	border-left: 6px solid #4CAF50;
 }
 .warning {
-	background:#ffffcc url('../svg/warning.svg') no-repeat 10px 10px;
-	background-size: 14px 14px;
+	background:#ffffcc url('../svg/warning.svg') no-repeat 13px 13px;
+	background-size: 18px 18px;
 	border-left:6px solid #ffeb3b;
 }
 .info {
-	background:#e7f3fe url('../svg/bulb.svg') no-repeat 10px 10px;
-	background-size: 14px 14px;
+	background:#e7f3fe url('../svg/bulb.svg') no-repeat 13px 13px;
+	background-size: 18px 18px;
 	border-left:6px solid #2196f3;
 }
