@@ -7,7 +7,7 @@ Chipprogrammers is multi purpose Jekyll template made by Chipprogrammer. I am no
 # Includes
 
 ### quotes.html
-{% include quotes.html container_color="pale-blue" leftbar_color="blue" icon_color="blue" quote="Make it as simple as possible, but not simpler." said_by="Albert Einstein" %}
+{% include quotes.html container_color="blue" leftbar_color="blue" icon_color="blue" quote="Make it as simple as possible, but not simpler." said_by="Albert Einstein" %}
 <!-- <div class="myNote danger"><span>danger: </span>Write your error message here.</div>
 <div class="myNote success"><span>success: </span>Write your success message here. The processor is the ability to another with the processor for the processor for performing arts ayirunnu ennu paranju poyit thirichu odi the same counter offer illayirunnu of the amplifier and answer show an interest.</div>
 <div class="myNote warning"><span>warning: </span>Write your warning message here.</div>
