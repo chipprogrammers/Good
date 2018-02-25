@@ -8,7 +8,7 @@ Chipprogrammers is multi purpose Jekyll template made by Chipprogrammer. I am no
 
 ### quotes.html
 {% include quotes.html container_color="pale-blue" leftbar_color="blue" icon_color="blue" quote="Any intelligent fool can make things bigger and more complex… It takes a touch of genius – and a lot of courage to move in the opposite direction." said_by="Albert Einstein" %}
-{% include myNote.html note_type="success" span_note="Success: " text="THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT." %}
+{% include myNote.html note_type="success" span_note="Success: " text="The software is provided as is, without wattanty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and infringement." %}
 <!-- <div class="myNote danger"><span>danger: </span>Write your error message here.</div>
 <div class="myNote success"><span>success: </span>Write your success message here. The processor is the ability to another with the processor for the processor for performing arts ayirunnu ennu paranju poyit thirichu odi the same counter offer illayirunnu of the amplifier and answer show an interest.</div>
 <div class="myNote warning"><span>warning: </span>Write your warning message here.</div>
