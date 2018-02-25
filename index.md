@@ -3,7 +3,6 @@ layout: default
 title: Chipprogrammers
 ---
 
-  <div class="w3-container" id="services" style="margin-top:75px">
 ChipprogrammersChipprogrammers is multi purpose Jekyll template made by Chipprogrammer. I am not a webdesigner. But I put some awesome effort to make this twme possible since I have some enthusiasm in Webdesigning. This Jekyll theme has some awesome include features.
 ### Includes
 
