@@ -7,12 +7,12 @@
   },
   {
     "text": "About",
-    "url": "/about/",
+    "url": "https://chipprogrammers.github.io/Good/about/",
     "icon": "fas fa-comments"
   },
   {
     "text": "Projects",
-    "url": "/projects",
+    "url": "https://chipprogrammers.github.io/Good/projects",
     "icon": "fas fa-desktop"
   },
   {
@@ -27,7 +27,7 @@
   },
   {
     "text": "XML Feed",
-    "url": "/feed.xml",
+    "url": "https://chipprogrammers.github.io/Good/feed.xml",
     "icon": "fas fa-rss",
     "target": _blank
   }
