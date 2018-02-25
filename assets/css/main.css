@@ -2,6 +2,7 @@ body,h1,h2,h3,h4,h5{font-family:Poppins,sans-serif}body{font-size:18px}.w3-half 
 .myNote {
 	color:#555;
 	padding:10px 36px;
+        margin-bottom: 10px;
 }
 .myNote span {
 	font-weight:bold;
