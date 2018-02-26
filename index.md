@@ -14,4 +14,4 @@ Chipprogrammers is multi purpose Jekyll template made by Chipprogrammer. I am no
 {% include myNote.html note_type="info" span_note="Info: " text="The software is provided as is, without wattanty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and infringement." %}
 {% include myNote.html note_type="danger" span_note="Danger: " text="The software is provided as is, without wattanty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and infringement." %}
 ### modal_image.html
-{% include modal_image.html img_url="Good/static/img/4.jpg" alt="Crane looking for pray" %}
+{% include modal_image.html img_url="{{ site.url }}{{ site.baseurl }}/static/img/4.jpg" alt="Crane looking for pray" %}
