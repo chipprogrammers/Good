@@ -1,6 +1,6 @@
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {
-  font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
