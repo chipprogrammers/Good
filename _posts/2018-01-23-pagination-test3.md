@@ -3,7 +3,7 @@ layout: post
 title:  "Pagination test3"
 date:   2018-01-23 21:50:39
 category: jekyll
-img: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Schneekranich_Grus_leucogeranus_090501_We_147.JPG/360px-Schneekranich_Grus_leucogeranus_090501_We_147.JPG
+img: /statoc/img/3.jpg
 card_color: danger
 tags: Jekyll
 ---
