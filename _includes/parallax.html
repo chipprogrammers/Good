@@ -1,5 +1,5 @@
-  {% assign parallax_image = page.img %}
-  <div class="ParallaxContainer" {% if page.img %} style="background-image: url({{ site.baseurl }}{{ parallax_imge }})"{% endif %}>
+  {% assign parallax_image = post.img %}
+  <div class="ParallaxContainer" {% if post.img %}style="background-image: url({{ site.baseurl }}{{ parallax_imge }})"{% endif %}>
     <h1>
     {{ post.title}}
     </h1>
