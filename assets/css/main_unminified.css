@@ -231,7 +231,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
     background: #1f8dd6;
     /*background-image:url({{ site.url }}{{ site.baseurl }}{{ page.img }});*/
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 .splash {
     /* absolute center .splash within .splash-container */
