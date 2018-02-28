@@ -248,8 +248,8 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 767px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+   .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
 }
