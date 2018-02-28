@@ -265,7 +265,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 42%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -273,8 +273,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 
 }
 .content-head {
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 800;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
 }
