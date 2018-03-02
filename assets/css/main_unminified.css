@@ -1,6 +1,16 @@
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+/* 16px @ 480px increasing to 32px @ 1920px */
+@media (min-width: 480px) {
+  body {
+    font-size: calc(1rem + ((1vw - 4.8px) * 1.1111));
+    /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 1920px) {
+  body {
+    font-size: 32px;
+  }
 }
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
