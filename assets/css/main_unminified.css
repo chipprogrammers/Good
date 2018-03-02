@@ -1,12 +1,9 @@
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-/* 16px @ 300px increasing to 36px @ 1920px */
-@media (min-width: 300px) {
+@media (min-width: 480px) {
   body {
-    font-size: calc(1rem + ((1vw - 3px) * 1.2346));
-    /* Where: * 1.2346 = 100 * font_Size_Difference / viewport_Width_Difference */
+    font-size: calc(1.125rem + ((1vw - 4.8px) * 1.25));
   }
 }
-/* Prevent font scaling beyond this breakpoint */
 @media (min-width: 1920px) {
   body {
     font-size: 36px;
