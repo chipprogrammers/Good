@@ -1,15 +1,15 @@
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-/* 16px @ 480px increasing to 32px @ 1920px */
-@media (min-width: 480px) {
+/* 16px @ 300px increasing to 36px @ 1920px */
+@media (min-width: 300px) {
   body {
-    font-size: calc(1rem + ((1vw - 4.8px) * 1.1111));
-    /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */
+    font-size: calc(1rem + ((1vw - 3px) * 1.2346));
+    /* Where: * 1.2346 = 100 * font_Size_Difference / viewport_Width_Difference */
   }
 }
 /* Prevent font scaling beyond this breakpoint */
 @media (min-width: 1920px) {
   body {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
