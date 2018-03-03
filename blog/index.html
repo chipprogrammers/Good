@@ -5,7 +5,6 @@ layout: default
 <div class="w3-container" style="margin-top:75px">
 <div class="w3-row-padding-2px">
 {% for post in paginator.posts %}
-<div class="w3-col m8 w3-center">
    <div class="w3-card-4 w3-margin" style="min-height:700px">
       <div class="w3-display-container w3-hover-opacity">
        <img src="{{ site.baseurl }}{{ post.img }}" alt="post-img" style="width:100%">
@@ -24,9 +23,6 @@ layout: default
    </div>
  </div>
 {% endfor %}
-</div>
-<div class="w3-col m4">
-{% include about-me.html %}
 </div>
 </div>
 <!-- Pagination links -->
