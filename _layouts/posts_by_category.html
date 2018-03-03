@@ -15,11 +15,10 @@ layout: default
         {% endfor %}
     {% endfor %}
     <hr />
-    <div class="w3-row-padding-2px">
+    <div class="w3-row-padding">
     {% if site.categories[page.categories] %}
         {% for post in site.categories[page.categories] %}
-        <div class="w3-third">
-  <div class="w3-card-4 w3-margin" style="min-height:700px">
+  <div class="w3-card-4 w3-margin">
      <div class="w3-display-container w3-hover-opacity">
          <img src="{{ site.baseurl }}{{ post.img }}" alt="post-image" style="width:100%">
            <div class="w3-display-middle w3-display-hover w3-text-white">
@@ -46,8 +45,7 @@ layout: default
             </div>
         </div>
    </div>
-{% endfor %}
-    </div>                                                                       
+{% endfor %}                                                                      
     {% else %}
 <p>There are no posts in this categories.</p>
     {% endif %}
