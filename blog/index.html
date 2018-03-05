@@ -6,6 +6,7 @@ title: My Blog
 <div class="w3-row">
 {% for post in paginator.posts %}
    <div class="w3-twothird">
+   <div class="-w3content">
    <div class="w3-card-4 w3-margin">
       <div class="w3-display-container w3-hover-opacity">
        <img src="{{ site.baseurl }}{{ post.img }}" alt="post-img" style="width:100%">
@@ -22,10 +23,13 @@ title: My Blog
           <a href="{{ post.url | prepend: site.baseurl }}" class="w3-button w3-black">Read More</a>
        </div>
    </div>
-{% endfor %}
  </div>
+</div>
+{% endfor %}
    <div class="w3-third">
+      <div class="w3-content">
       {% include about-me.html %}
+     </div>
   </div>
 </div>
 <!-- Pagination links -->
