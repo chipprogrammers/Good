@@ -4,8 +4,8 @@ title: My Blog
 ---
 
 <div class="w3-row">
+<div class="w3-twothird">
 {% for post in paginator.posts %}
-   <div class="w3-twothird">
    <div class="-w3content">
    <div class="w3-card-4 w3-margin">
       <div class="w3-display-container w3-hover-opacity">
@@ -24,8 +24,8 @@ title: My Blog
        </div>
    </div>
  </div>
-</div>
 {% endfor %}
+</div>
    <div class="w3-third">
       <div class="w3-content">
       {% include about-me.html %}
