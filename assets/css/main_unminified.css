@@ -202,6 +202,40 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 #myLink img{
    text-decoration: none;
 }
+
+#artLink a[target="_blank"]:after {
+  content: "\f35d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin: 0 0 0 5px;
+}
+#artLink a:link{
+    color: blue; 
+    background-color: transparent; 
+    text-decoration: none;
+    border-bottom: 1px solid red;
+}
+
+#artLink a:visited {
+    color: hotpink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#artLink a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#artLink a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+#artLink img{
+   text-decoration: none;
+}
 .taggs{list-style:none;margin:0;overflow:hidden;padding:0;}
 .taggs li{float:left;}
 .tagg{background:green;border-radius:3px 0 0 3px;color:#ffffff;display:inline-block;height:26px;line-height:26px;padding:0 20px 0 23px;position:relative;margin:0 10px 10px 0;text-decoration:none;-webkit-transition:color 0.2s;}
